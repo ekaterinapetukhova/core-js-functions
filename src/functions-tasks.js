@@ -96,7 +96,7 @@ function getPolynom(...args) {
   const cache = new Set();
   let result = 0;
 
-  return function (x) {
+  return (x) => {
     if (!cache.has(x)) result = 0;
 
     if (args)
